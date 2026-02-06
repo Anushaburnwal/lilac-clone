@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "LilacFont";
+  src: url("/fonts/MyFont.otf") format("opentype");
+}
+
+
+.section {
+  background: #feffec;
+  padding: 90px 60px;
+  
+}
+
+.heading {
+  text-align: center;
+  font-size: 52px;
+  margin-top: 20px;
+  font-weight: 600;
+  color: #1f3b2c;
+  font-family: "LilacFont", sans-serif;
+  margin-bottom: 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* CARD */
+
+.card {
+  border: 1px solid #1f3b2c;
+  font-family: "LilacFont", sans-serif;
+  padding: 40px;
+  background: #d9d5cc;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #1f3b2c;
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #1f3b2c;
+  margin-bottom: 30px;
+}
+
+/* CIRCLE IMAGE */
+
+.imageWrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.imageWrap img {
+  width: 290px;
+  height: 290px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .heading {
+    font-size: 36px;
+  }
+}
