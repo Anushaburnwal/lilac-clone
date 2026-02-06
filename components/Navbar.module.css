@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "LilacFont";
+  src: url("/fonts/MyFont.otf") format("opentype");
+}
+
 .navbar {
   position: relative;
   width: 100%;
@@ -8,13 +13,13 @@
 
 .title {
   position: absolute;
+  font-family: "LilacFont", sans-serif;
   top: 12px;
   left: 50px;
 
-  font-size: 32px;
-  font-weight: 500;
+  font-size: 36px;
+  font-weight: 580;
   color: #14532d;
-  font-family: 'Poppins', sans-serif;
 }
 
 /* RIGHT CORNER LINKS */
@@ -23,8 +28,8 @@
   position: absolute;
   top: 16px;
   right: 50px;
-
-  font-size: 22px;
+  font-family: "LilacFont", sans-serif;
+  font-size: 20px;
   color: #14532d;
 }
 

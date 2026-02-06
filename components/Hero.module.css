@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "LilacFont";
+  src: url("/fonts/MyFont.otf") format("opentype");
+}
+
+.heroSection {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center; /* vertical centering */
+  height: 100vh;
+  gap: 64px;
+  max-width: 1280px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 80px 40px;
+  min-height: 100vh; /* ⭐ forces vertical middle */
+}
+
+.heroTextWrapper {
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-100px);
+  justify-content: center; /* vertical center */
+  align-items: flex-start;
+  margin-top: -150px;
+  margin-right: -60px;
+  margin-bottom: -80px;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .heroSection {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.heroImageWrapper {
+  width: 100%;
+  max-width: 800px;
+  height: 920px;
+  overflow: hidden;
+  border-top-left-radius: 320px;
+  border-top-right-radius: 320px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  margin-top: -32px;
+  margin-left: -99px;
+}
+
+.heroImageWrapper img {
+  width: 100%;
+  height: 95%;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+
+.heroImageWrapper:hover img {
+  transform: scale(1.05);
+}
+
+.heroTitle {
+  font-size: 80px;
+  font-weight: 600;
+  color: #14532d;
+  margin-bottom: 24px;
+  font-family: "LilacFont", sans-serif;
+  line-height: 1.1;
+}
+
+.heroText {
+  color: #166534;
+  margin-bottom: 32px;
+  font-family: "LilacFont", sans-serif;
+  margin-left: 52px;
+  font-size: 20px;
+}
+
+.heroButton {
+  border: 1px solid #14532d;
+  font-size: 15px;
+  padding: 12px 24px;
+  margin-left: 140px;
+  background: transparent;
+  color: #000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: fit-content;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.heroButton:hover {
+  background: #14532d;
+  color: #fff;
+}
