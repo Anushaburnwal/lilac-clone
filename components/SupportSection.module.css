@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "LilacFont";
+  src: url("/fonts/MyFont.otf") format("opentype");
+}
+
+
+.section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 120vh;
+}
+
+/* LEFT IMAGE */
+
+.imageWrapper {
+  overflow: hidden;
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* RIGHT CONTENT */
+
+.content {
+  background: #d7d6df; /* soft lavender */
+  padding: 80px 90px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.content h2 {
+  font-size: 52px;
+  font-weight: bold;
+  color: #1f3b2c;
+  font-family: "LilacFont", sans-serif;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+
+.subtitle {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: "LilacFont", sans-serif;
+  color: #1f3b2c;
+}
+
+.content ul {
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+
+.content li {
+  margin-bottom: 12px;
+  font-family: "LilacFont", sans-serif;
+  font-size: 20px;
+  color: #1f3b2c;
+}
+
+.footerText {
+  font-size: 20px;
+  color: #1f3b2c;
+  font-family: "LilacFont", sans-serif;
+  margin-bottom: auto;
+}
+
+/* CTA BUTTON — divider line = border */
+
+.cta {
+  width: 100%;
+
+  font-family: "LilacFont", sans-serif;
+  border: none;
+  border-top: 1px solid #1f3b2c;
+
+  background: transparent;
+  color: #1f3b2c;
+
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-align: left;
+
+  padding: 22px 0;
+  cursor: pointer;
+
+  transition: all 0.35s ease;
+}
+
+/* hover fill */
+
+.cta:hover {
+  background: #1f3b2c;
+  color: white;
+  padding-left: 12px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .section {
+    grid-template-columns: 1fr;
+  }
+
+  .content {
+    padding: 60px 40px;
+  }
+
+  .content h2 {
+    font-size: 36px;
+  }
+}

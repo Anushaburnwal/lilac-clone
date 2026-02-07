@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "LilacFont";
+  src: url("/fonts/MyFont.otf") format("opentype");
+}
+
+
+.section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+
+  background: #d9d5cc;
+  padding: 120px 80px;
+  position: relative;
+}
+
+/* LEFT TEXT */
+
+.text {
+  max-width: 520px;
+  font-family: "LilacFont", sans-serif;
+}
+
+.text h2 {
+  font-size: 52px;
+  font-family: "LilacFont", sans-serif;
+  color: #1f3b2c;
+  margin-bottom: 30px;
+}
+
+.text p {
+  font-size: 18px;
+  line-height: 1.7;
+  font-family: "LilacFont", sans-serif;
+  color: #1f3b2c;
+  margin-bottom: 40px;
+}
+
+/* CTA BUTTON */
+
+.cta {
+  background: transparent;
+  border: 1px solid #1f3b2c;
+  font-family: "LilacFont", sans-serif;
+  padding: 14px 26px;
+  font-size: 16px;
+  letter-spacing: 1px;
+
+  color: #1f3b2c;
+  cursor: pointer;
+
+  transition: all 0.35s ease;
+}
+
+.cta:hover {
+  background: #1f3b2c;
+  color: white;
+}
+
+/* RIGHT IMAGE AREA */
+
+.imageArea {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+/* Tall rounded image */
+
+.mainImage {
+  width: 360px;
+  height: 520px;
+  overflow: hidden;
+  border-radius: 200px 200px 20px 20px;
+}
+
+.mainImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Floating circle */
+
+.circleImage {
+  position: absolute;
+  bottom: -60px;
+  right: 0;
+
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  overflow: hidden;
+
+  background: white;
+}
+
+.circleImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .section {
+    grid-template-columns: 1fr;
+    padding: 80px 40px;
+  }
+
+  .imageArea {
+    margin-top: 60px;
+  }
+
+  .text h2 {
+    font-size: 38px;
+  }
+}
