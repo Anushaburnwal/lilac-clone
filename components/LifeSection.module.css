@@ -15,7 +15,7 @@
 /* LEFT SIDE TEXT */
 
 .textWrapper {
-  padding: 80px 90px;
+  padding: 0 90px;
   display: flex;
   margin-bottom: 190px;
   font-family: "LilacFont", sans-serif;

@@ -65,7 +65,7 @@ export default function Footer() {
         </p>
 
         <p className={styles.copy}>
-          © 2024 Your Business Name Here, LLC.
+          All Rights Reserved © 2024 Your Business Name Here, LLC.
         </p>
 
       </div>

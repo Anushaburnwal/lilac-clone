@@ -1,93 +1,171 @@
-.footer {
-  width: 100%;
-  background: #d9d5cc;
-  color: #1f3b2c;
+/* ---------- FONT ---------- */
+
+@font-face {
+  font-family: "LilacFont";
+  src: url("/fonts/MyFont.otf") format("opentype");
 }
 
-/* ---------- TOP ---------- */
+/* ---------- FOOTER BASE ---------- */
+
+.footer {
+  width: 100%;
+  background: #fffbf0;
+  color: #1f3b2c;
+  font-family: "LilacFont", sans-serif;
+}
+
+/* ---------- TOP GRID LAYOUT ---------- */
 
 .top {
-  max-width: 1200px;
-  margin: auto;
-  padding: 90px 40px;
+  width: 100%;
+  padding: 100px 80px 130px;
+
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
-  gap: 60px;
+
+  align-items: start;
+  gap: 40px;
+}
+
+/* Column positioning */
+
+.top .col:first-child {
+  justify-self: start;
+}
+
+.top .col:nth-child(2) {
+  justify-self: end;
+  margin-right: 70px;
+}
+
+.top .col:last-child {
+  justify-self: end;
+}
+
+/* ---------- TYPOGRAPHY ---------- */
+
+.brand {
+  font-size: 43px;
+  font-weight: 700;
+  margin-bottom: 22px;
 }
 
 .col h3 {
-  margin-bottom: 15px;
-}
-
-.brand {
-  font-size: 32px;
+  font-size: 35px;
+  font-weight: 700;
   margin-bottom: 20px;
 }
 
 .col p {
-  line-height: 1.7;
+  font-size: 20px;
+  line-height: 1.8;
+  margin-bottom: 6px;
 }
 
-/* LINKS */
+/* ---------- PREMIUM UNDERLINE LINK STYLE ---------- */
 
 .links a,
 .nav a,
+.contact a,
 .legal a {
+  position: relative;
   display: inline-block;
+  font-size: 20px;
   color: inherit;
   text-decoration: none;
-  border-bottom: 1px solid transparent;
-  margin-bottom: 6px;
-  transition: all 0.2s ease;
+  margin-bottom: 8px;
+
+  transition: transform 0.2s ease;
 }
+
+/* Animated underline */
+
+.links a::after,
+.nav a::after,
+.contact a::after,
+.legal a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background: #1f3b2c;
+
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect */
 
 .links a:hover,
 .nav a:hover,
+.contact a:hover,
 .legal a:hover {
-  border-bottom: 1px solid #1f3b2c;
+  transform: translateX(3px);
 }
 
-/* NAV */
+.links a:hover::after,
+.nav a:hover::after,
+.contact a:hover::after,
+.legal a:hover::after {
+  transform: scaleX(0.6);
+}
+
+/* ---------- NAV COLUMN ---------- */
 
 .nav {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 }
 
-/* ---------- BOTTOM ---------- */
+/* ---------- BOTTOM SECTION ---------- */
 
 .bottom {
   text-align: center;
-  padding: 40px 20px;
+  padding: 60px 10px;
   background: #cec8bf;
 }
 
 .legal {
-  margin-bottom: 14px;
+  margin-bottom: 18px;
 }
 
 .legal a {
-  margin: 0 8px;
-  font-size: 14px;
+  margin: 0 10px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .credit {
-  margin-bottom: 8px;
-  font-size: 14px;
+  margin-bottom: 10px;
+  font-size: 16px;
 }
 
 .copy {
-  font-size: 14px;
+  font-size: 16px;
+  margin-top: 60px;
 }
 
-/* ---------- RESPONSIVE ---------- */
+/* ---------- RESPONSIVE MAGIC ---------- */
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
 
   .top {
     grid-template-columns: 1fr;
     text-align: center;
+    padding: 80px 40px;
+    gap: 50px;
+  }
+
+  .top .col,
+  .top .col:first-child,
+  .top .col:nth-child(2),
+  .top .col:last-child {
+    justify-self: center;
+    margin: 0;
   }
 
   .nav {
