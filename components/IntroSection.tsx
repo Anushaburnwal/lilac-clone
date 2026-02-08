@@ -5,7 +5,7 @@ export default function IntroSection() {
     <section className={styles.section}>
       
       {/* LEFT TEXT */}
-      <div className={styles.text}>
+      <div className={`${styles.text}`}>
         <h2>Hi, I’m Lilac.</h2>
 
         <p>
@@ -15,9 +15,12 @@ export default function IntroSection() {
           throws your way.
         </p>
 
-        <button className={styles.cta}>
-          LET’S CHAT →
-        </button>
+        <div className="w-full flex justify-center">
+          <button className={styles.cta}>
+            LET’S CHAT →
+          </button>
+        </div>
+
       </div>
 
       {/* RIGHT IMAGES */}

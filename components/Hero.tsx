@@ -8,27 +8,30 @@ const dmSans = DM_Sans({
 
 export default function Hero() {
   return (
-    <section className={styles.heroSection}>
+    <section className={`h-fit flex justify- mx-7`}>
 
       {/* Image */}
-      <div className={styles.heroImageWrapper}>
+      <div className={`w-1/3  rounded-t-full overflow-hidden`}>
         <img src="/hero.jpg" alt="Hero" />
       </div>
 
-      {/* Text */}
-      <div className={styles.heroTextWrapper}>
+      {/* Text  */}
+      <div className={`w-2/3 flex flex-col items-center justify-center`} >
 
-        <h1 className={`${styles.heroTitle} ${dmSans.className}`}>
-          Live your life <br /> in full bloom
-        </h1>
+        <div className="w-7/12 flex flex-col items-center">
 
-        <p className={styles.heroText}>
-          Therapy for Adults in Minneapolis, MN.
-        </p>
+          <h1 className={`${styles.heroTitle} ${dmSans.className}`}>
+            Live your life in full bloom
+          </h1>
 
-        <button className={styles.heroButton}>
-          CONNECT WITH ME →
-        </button>
+          <p className={styles.heroText}>
+            Therapy for Adults in Minneapolis, MN.
+          </p>
+
+          <button className={styles.heroButton}>
+            CONNECT WITH ME →
+          </button>
+        </div>
 
       </div>
 

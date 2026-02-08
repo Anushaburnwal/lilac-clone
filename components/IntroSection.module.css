@@ -45,10 +45,8 @@
   border: 1px solid #1f3b2c;
   font-family: "LilacFont", sans-serif;
   padding: 14px 26px;
-  font-size: 13px;
-  margin-left: auto;
+  font-size: 13px;                              
   letter-spacing: 1px;
-  align-self: center; 
   color: #1f3b2c;
   cursor: pointer;
   transition: all 0.60s ease;
