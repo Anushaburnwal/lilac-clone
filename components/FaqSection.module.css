@@ -8,7 +8,7 @@
 .section {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
-  background: #d9d5cc;
+  background: #f6f4f0;
   padding: 120px 80px;
   gap: 60px;
 }
@@ -16,9 +16,11 @@
 /* LEFT IMAGE */
 
 .imageWrap {
-  height: 520px;
+  height: 690px;
+  width: 470px;
   overflow: hidden;
-  border-radius: 240px 240px 20px 20px;
+  margin-left: 80px;
+  border-radius: 240px 240px 0 0;
 }
 
 .imageWrap img {
@@ -31,16 +33,18 @@
 
 .faqWrap {
   display: flex;
+  margin-top: 120px;
   flex-direction: column;
 }
 
 .title {
-  font-size: 48px;
+  font-size: 52px;
   font-family: "LilacFont", sans-serif;
   color: #1f3b2c;
   margin-bottom: 30px;
+  font-weight: bold;
   border-bottom: 1px solid #1f3b2c;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 /* FAQ ITEM */
@@ -48,7 +52,7 @@
 .faqItem {
   border-bottom: 1px solid #1f3b2c;
   font-family: "LilacFont", sans-serif;
-  padding: 20px 0;
+  padding: 12px 0;
 }
 
 .questionRow {
@@ -64,7 +68,8 @@
 }
 
 .questionRow h3 {
-  font-size: 26px;
+  font-size: 40px;
+  font-weight: bold;
   font-family: "LilacFont", sans-serif;
   color: #1f3b2c;
 }
@@ -75,7 +80,7 @@
   max-height: 0;
   overflow: hidden;
   font-family: "LilacFont", sans-serif;
-  transition: all 0.35s ease;
+  transition: all 0.50s ease;
 }
 
 .answer p {

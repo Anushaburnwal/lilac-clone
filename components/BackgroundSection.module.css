@@ -1,43 +1,61 @@
+@font-face {
+  font-family: "LilacFont";
+  src: url("/fonts/MyFont.otf") format("opentype");
+}
+
+
+
 .section {
   background: #d9d5cc;
   padding: 120px 80px;
-  max-width: 900px;
+  max-width: 100%;
   margin: auto;
 }
+
 
 /* TITLE */
 
 .heading {
-  font-size: 44px;
+  font-size: 42px;
   text-align: center;
+  font-family: "LilacFont", sans-serif;
   color: #1f3b2c;
-  margin-bottom: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
   border-bottom: 1px solid #1f3b2c;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 /* ROW */
 
 .row {
   border-bottom: 1px solid #1f3b2c;
-  padding: 22px 0;
+  padding: 11px 350px;
 }
 
-.rowHeader {
+/* HEADER */
+
+.header {
   display: flex;
   justify-content: space-between;
+  font-family: "LilacFont", sans-serif;
   align-items: center;
   cursor: pointer;
 }
 
-.rowHeader h3 {
-  font-size: 24px;
+.header h3 {
+  font-size: 26px;
+  font-family: "LilacFont", sans-serif;
   color: #1f3b2c;
 }
+
+/* + / - icon */
 
 .icon {
   font-size: 28px;
   color: #1f3b2c;
+  font-weight: lighter;
+  transition: transform 0.2s ease;
 }
 
 /* CONTENT */
@@ -45,12 +63,12 @@
 .content {
   max-height: 0;
   overflow: hidden;
-  transition: all 0.35s ease;
+  transition: all 0.50s ease;
 }
 
 .content p {
   margin-top: 15px;
-  font-size: 16px;
+  font-size: 20px;
   color: #1f3b2c;
   line-height: 1.6;
 }
@@ -63,7 +81,7 @@
 
 /* RESPONSIVE */
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .section {
     padding: 80px 30px;
   }
@@ -72,7 +90,7 @@
     font-size: 32px;
   }
 
-  .rowHeader h3 {
+  .header h3 {
     font-size: 20px;
   }
 }

@@ -3,24 +3,24 @@
 import { useState } from "react";
 import styles from "./BackgroundSection.module.css";
 
-const sections = [
+const data = [
   {
     title: "Education",
-    content:
-      "Euphorbia dianthus alchemilla muscari lavandula anthurium artemesia false artemesia moluccella gladiolus cirsium trollius anthurium prunus delphinium achillea.",
+    content: "Euphorbia dianthus alchemilla muscari lavandula anthurium artemesia false artemesia moluccella gladiolus cirsium trollius anthurium prunus delphinium achillea.",
   },
   {
     title: "Licensure",
-    content: "Answer goes here.",
+    content: "Euphorbia dianthus alchemilla muscari lavandula anthurium artemesia false artemesia moluccella gladiolus cirsium trollius anthurium prunus delphinium achillea.",
   },
   {
     title: "Certifications",
-    content: "Answer goes here.",
+    content: "Euphorbia dianthus alchemilla muscari lavandula anthurium artemesia false artemesia moluccella gladiolus cirsium trollius anthurium prunus delphinium achillea.",
   },
 ];
 
 export default function BackgroundSection() {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  // 👇 IMPORTANT: default = null → everything closed
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggle = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -28,15 +28,18 @@ export default function BackgroundSection() {
 
   return (
     <section className={styles.section}>
-      <h2 className={styles.heading}>My Professional Background</h2>
+      <h2 className={styles.heading}>
+        My Professional Background
+      </h2>
 
-      {sections.map((item, index) => (
+      {data.map((item, index) => (
         <div key={index} className={styles.row}>
           <div
-            className={styles.rowHeader}
+            className={styles.header}
             onClick={() => toggle(index)}
           >
             <h3>{item.title}</h3>
+
             <span className={styles.icon}>
               {openIndex === index ? "−" : "+"}
             </span>
