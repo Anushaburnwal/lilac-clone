@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "LilacFont";
+  src: url("/fonts/MyFont.otf") format("opentype");
+}
+
+
 .section {
   width: 100%;
   background: #7c7a43; /* olive tone */
@@ -15,17 +21,20 @@
 /* TITLE */
 
 .title {
-  font-size: 48px;
+  font-size: 45px;
   color: #f4f1e8;
+  font-weight: bold;
+  font-family: "LilacFont", sans-serif;
   margin-bottom: 24px;
 }
 
 /* TEXT */
 
 .text {
-  font-size: 18px;
+  font-size: 20px;
   color: #f4f1e8;
   line-height: 1.7;
+  font-family: "LilacFont", sans-serif;
   margin-bottom: 60px;
 }
 
@@ -36,7 +45,8 @@
   color: #f4f1e8;
   border: 1px solid #f4f1e8;
   padding: 16px 40px;
-  font-size: 16px;
+  font-size: 12px;
+  font-weight: bold;
   letter-spacing: 1px;
   cursor: pointer;
   transition: all 0.90s ease;
