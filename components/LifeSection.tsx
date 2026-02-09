@@ -1,6 +1,10 @@
+"use client";
+
+import { useReveal } from "@/hooks/useReveal";
 import styles from "./LifeSection.module.css";
 
 export default function LifeSection() {
+   const { ref, visible } = useReveal();
   return (
     <section className="mt-10 bg-[#d9d5cc] flex">
 

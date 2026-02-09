@@ -30,19 +30,21 @@ export default function BackgroundSection() {
   return (
     <section className="font-lilac bg-[#E7E4DB] py-20 px-6">
 
-      {/* container width */}
       <div className="max-w-3xl mx-auto">
 
         {/* heading */}
-        <h2 className="text-4xl md:text-4xl font-semibold text-black text-center mb-12">
+        <h2 className="text-4xl font-semibold text-black text-center mb-12 fade-up">
           My Professional Background
         </h2>
 
         {/* accordion */}
         {data.map((item, index) => (
-          <div key={index} className="border-t border-black">
+          <div
+            key={index}
+            className="border-t border-black fade-up"
+            style={{ animationDelay: `${0.2 + index * 0.2}s` }}
+          >
 
-            {/* header */}
             <button
               onClick={() => toggle(index)}
               className="w-full flex justify-between items-center py-6 text-left"
@@ -56,7 +58,6 @@ export default function BackgroundSection() {
               </span>
             </button>
 
-            {/* content */}
             <div
               className={`overflow-hidden transition-all duration-300 ${
                 openIndex === index
@@ -68,13 +69,14 @@ export default function BackgroundSection() {
                 {item.content}
               </p>
             </div>
+
           </div>
         ))}
 
-        {/* bottom divider */}
-        <div className="border-t border-green-900/40" />
+        <div className="border-t border-black" />
 
       </div>
+
     </section>
   );
 }

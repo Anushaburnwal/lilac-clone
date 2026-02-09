@@ -1,3 +1,6 @@
+"use client";
+
+
 import styles from "./SupportSection.module.css";
 
 export default function SupportSection() {

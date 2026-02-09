@@ -1,3 +1,6 @@
+"use client";
+
+
 import styles from "./Specialties.module.css";
 
 export default function Specialties() {

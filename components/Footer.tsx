@@ -1,3 +1,6 @@
+"use client";
+
+
 import Link from "next/link";
 import styles from "./Footer.module.css";
 
@@ -9,7 +12,7 @@ export default function Footer() {
       <div className={styles.top}>
 
         {/* LEFT */}
-        <div className={styles.col}>
+        <div className={`${styles.col} ${styles.fadeUp} ${styles.delay1}`}>
           <h2 className={styles.brand}>Lilac Template</h2>
 
           <p>
@@ -18,18 +21,14 @@ export default function Footer() {
           </p>
 
           <p className={styles.links}>
-            <a href="mailto:email@example.com">
-              email@example.com
-            </a>
+            <a href="mailto:email@example.com">email@example.com</a>
             <br />
-            <a href="tel:5555555555">
-              (555) 555-5555
-            </a>
+            <a href="tel:5555555555">(555) 555-5555</a>
           </p>
         </div>
 
         {/* MIDDLE */}
-        <div className={styles.col}>
+        <div className={`${styles.col} ${styles.fadeUp} ${styles.delay2}`}>
           <h3>Hours</h3>
           <p>
             Monday – Friday<br />
@@ -38,7 +37,7 @@ export default function Footer() {
         </div>
 
         {/* RIGHT */}
-        <div className={styles.col}>
+        <div className={`${styles.col} ${styles.fadeUp} ${styles.delay3}`}>
           <h3>Find</h3>
 
           <nav className={styles.nav}>
@@ -51,7 +50,7 @@ export default function Footer() {
       </div>
 
       {/* BOTTOM BAR */}
-      <div className={styles.bottom}>
+      <div className={`${styles.bottom} ${styles.fadeUp} ${styles.delay4}`}>
 
         <div className={styles.legal}>
           <a href="#">Privacy & Cookies Policy</a>

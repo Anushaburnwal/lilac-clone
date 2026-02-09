@@ -1,5 +1,8 @@
+"use client";
+
 import { DM_Sans } from "next/font/google";
 import styles from "./Hero.module.css";
+import { useReveal } from "@/hooks/useReveal";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -7,9 +10,12 @@ const dmSans = DM_Sans({
 });
 
 export default function Hero() {
+  const { ref, visible } = useReveal();
   return (
-    <section className="h-fit flex mx-7 pt-32">
-
+    <section
+      ref={ref}
+      className={`h-fit flex mx-7 pt-32 fade-up ${visible ? "show" : ""}`}
+    >
       {/* Image */}
       <div
         className={`w-1/3 rounded-t-full overflow-hidden 
@@ -20,9 +26,7 @@ export default function Hero() {
 
       {/* Text */}
       <div className="w-2/3 flex flex-col items-center justify-center">
-
         <div className="w-7/12 flex flex-col items-center">
-
           <h1
             className={`${styles.heroTitle} ${dmSans.className} 
             ${styles.fadeUp} ${styles.delay2}`}
@@ -43,11 +47,8 @@ export default function Hero() {
           >
             CONNECT WITH ME →
           </button>
-
         </div>
-
       </div>
-
     </section>
   );
 }
