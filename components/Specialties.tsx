@@ -3,11 +3,16 @@ import styles from "./Specialties.module.css";
 export default function Specialties() {
   return (
     <section className={styles.section}>
-      <h2 className={styles.heading}>My Specialties</h2>
+
+      {/* Heading */}
+      <h2 className={`${styles.heading} ${styles.fadeUp} ${styles.delay1}`}>
+        My Specialties
+      </h2>
 
       <div className={styles.grid}>
+
         {/* CARD 1 */}
-        <div className={styles.card}>
+        <div className={`${styles.card} ${styles.fadeUp} ${styles.delay2}`}>
           <h3>Self-Esteem</h3>
           <p>
             Building a strong sense of self-worth is key to living a fulfilled
@@ -20,7 +25,7 @@ export default function Specialties() {
         </div>
 
         {/* CARD 2 */}
-        <div className={styles.card}>
+        <div className={`${styles.card} ${styles.fadeUp} ${styles.delay3}`}>
           <h3>Relationships</h3>
           <p>
             Navigating relationships can be complex. I’m here to guide you
@@ -33,7 +38,7 @@ export default function Specialties() {
         </div>
 
         {/* CARD 3 */}
-        <div className={styles.card}>
+        <div className={`${styles.card} ${styles.fadeUp} ${styles.delay4}`}>
           <h3>Burnout</h3>
           <p>
             Feeling overwhelmed by your career is more common than you think.
@@ -44,6 +49,7 @@ export default function Specialties() {
             <img src="/special3.jpg" alt="Burnout" />
           </div>
         </div>
+
       </div>
     </section>
   );

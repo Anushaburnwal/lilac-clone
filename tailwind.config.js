@@ -9,3 +9,14 @@ module.exports = {
   },
   plugins: [],
 }
+
+module.exports = {
+  theme: {
+    extend: {
+      fontFamily: {
+        lilac: ["LilacFont", "sans-serif"],
+      },
+    },
+  },
+};
+

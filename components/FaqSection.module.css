@@ -62,10 +62,19 @@
 }
 
 .icon {
-  font-size: 30px;
+  font-size: 28px;
+  font-weight: 300;
   width: 40px;
-  color: #1f3b2c;
+  color: black;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
 }
+
+.openIcon {
+  transform: rotate(180deg);
+}
+
 
 .questionRow h3 {
   font-size: 40px;

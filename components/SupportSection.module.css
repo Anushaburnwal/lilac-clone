@@ -38,12 +38,12 @@
   font-weight: bold;
   color: #1f3b2c;
   font-family: "LilacFont", sans-serif;
-  margin-bottom: 30px;
-  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-top: 180px;
 }
 
 .subtitle {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   font-size: 20px;
   font-family: "LilacFont", sans-serif;
   color: #1f3b2c;
@@ -57,11 +57,13 @@
 .content li {
   margin-bottom: 12px;
   font-family: "LilacFont", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
+  margin-left: 20px;
   color: #1f3b2c;
 }
 
 .footerText {
+  margin-top: 40px;
   font-size: 20px;
   color: #1f3b2c;
   font-family: "LilacFont", sans-serif;
@@ -82,7 +84,7 @@
 
   font-size: 16px;
   letter-spacing: 1px;  
-
+  margin-top: auto;
   padding: 22px 0;
   cursor: pointer;
 
@@ -112,3 +114,31 @@
     font-size: 36px;
   }
 }
+
+/* ===== SUPPORT SECTION ENTRANCE ANIMATION ===== */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeUp {
+  opacity: 0;
+  animation: fadeUp 0.9s ease forwards;
+}
+
+/* stagger timing */
+
+.delay1 { animation-delay: 0.1s; }
+.delay2 { animation-delay: 0.3s; }
+.delay3 { animation-delay: 0.5s; }
+.delay4 { animation-delay: 0.7s; }
+.delay5 { animation-delay: 0.9s; }
+.delay6 { animation-delay: 1.1s; }

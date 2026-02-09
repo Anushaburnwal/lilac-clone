@@ -19,7 +19,7 @@ const faqs = [
 ];
 
 export default function FaqSection() {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -42,10 +42,13 @@ export default function FaqSection() {
               className={styles.questionRow}
               onClick={() => toggleFAQ(index)}
             >
-              <span className={styles.icon}>
+              <span
+                className={`${styles.icon} ${
+                  openIndex === index ? styles.openIcon : ""
+                }`}
+              >
                 {openIndex === index ? "−" : "+"}
               </span>
-
               <h3>{faq.question}</h3>
             </div>
 
