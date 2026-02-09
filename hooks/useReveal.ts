@@ -3,21 +3,28 @@
 import { useEffect, useRef, useState } from "react";
 
 export function useReveal() {
-  const ref = useRef<HTMLDivElement | null>(null);
+  const ref = useRef<HTMLElement | null>(null);
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
     const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setVisible(true);
-          observer.disconnect();
-        }
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setVisible(true);
+            observer.unobserve(entry.target);
+          }
+        });
       },
-      { threshold: 0.2 }
+      {
+        threshold: 0.2,
+      }
     );
 
-    if (ref.current) observer.observe(ref.current);
+    observer.observe(el);
 
     return () => observer.disconnect();
   }, []);
