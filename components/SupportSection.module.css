@@ -26,6 +26,7 @@
 
 .content {
   background: #d7d6df; /* soft lavender */
+  padding: 80px 90px;
 
   display: flex;
   flex-direction: column;
@@ -81,7 +82,8 @@
   color: #1f3b2c;
 
   font-size: 16px;
-  letter-spacing: 1px;  
+  letter-spacing: 1px;
+  text-align: left;
 
   padding: 22px 0;
   cursor: pointer;
