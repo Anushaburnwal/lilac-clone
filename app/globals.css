@@ -27,7 +27,7 @@ body {
 
 @font-face {
   font-family: "LilacFont";
-  src: url("/fonts/MyFont.otf") format("opentype");
+  src: url("/fonts/MyFont1.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -35,37 +35,3 @@ body {
 .font-lilac {
   font-family: "LilacFont", sans-serif;
 }
-
-
-/* ===== GLOBAL FADE UP ANIMATION ===== */
-
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(60px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.fade-up {
-  opacity: 0;
-  animation: fadeUp 0.9s ease forwards;
-}
-
-
-.fade-up {
-  opacity: 0;
-  transform: translateY(60px);
-  transition: all 0.8s ease;
-}
-
-.fade-up.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-

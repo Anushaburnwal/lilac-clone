@@ -1,39 +1,24 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import { useReveal } from "@/hooks/useReveal";
 
-const OfficeSection = () => {
-  const refs = useRef<(HTMLDivElement | HTMLImageElement | null)[]>([]);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("show");
-          }
-        });
-      },
-      { threshold: 0.2 }
-    );
-
-    refs.current.forEach((el) => {
-      if (el) observer.observe(el);
-    });
-
-    return () => observer.disconnect();
-  }, []);
+export default function OfficeSection() {
+  const { ref, show } = useReveal();
 
   return (
     <section className="w-full bg-[#DCC5B2] py-16 px-6 md:px-16">
-      <div className="max-w-6xl mx-auto">
-
+      <div
+        ref={ref as React.RefObject<HTMLDivElement>}
+        className="max-w-6xl mx-auto"
+      >
         {/* Heading */}
         <div
-          ref={(el) => {
-            refs.current[0] = el;
-          }}
-          className="text-center mb-10 fade-up"
+          className={`
+            text-center mb-10
+            transform transition-all duration-700 ease-out
+            ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}
+            delay-100
+          `}
         >
           <h2 className="text-3xl md:text-4xl font-semibold text-black">
             A Calm Space to Feel Supported
@@ -49,28 +34,51 @@ const OfficeSection = () => {
 
         {/* Images */}
         <div className="grid md:grid-cols-3 gap-6 mb-10">
-          {["/office1.jpg", "/office2.jpg", "/office3.jpg"].map(
-            (src, i) => (
-              <img
-                key={i}
-                ref={(el) => {
-                  refs.current[i + 1] = el;
-                }}
-                src={src}
-                alt="Therapy office"
-                className="rounded-0 shadow-md object-cover w-full h-64 fade-up"
-                style={{ transitionDelay: `${i * 0.15}s` }}
-              />
-            )
-          )}
+          {/* Image 1 */}
+          <img
+            src="/office1.jpg"
+            alt="Therapy office"
+            className={`
+              w-full h-64 object-cover shadow-md
+              transform transition-all duration-700 ease-out
+              ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}
+              delay-300
+            `}
+          />
+
+          {/* Image 2 */}
+          <img
+            src="/office2.jpg"
+            alt="Therapy office"
+            className={`
+              w-full h-64 object-cover shadow-md
+              transform transition-all duration-700 ease-out
+              ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}
+              delay-500
+            `}
+          />
+
+          {/* Image 3 */}
+          <img
+            src="/office3.jpg"
+            alt="Therapy office"
+            className={`
+              w-full h-64 object-cover shadow-md
+              transform transition-all duration-700 ease-out
+              ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}
+              delay-700
+            `}
+          />
         </div>
 
         {/* Footer */}
         <div
-          ref={(el) => {
-            refs.current[4] = el;
-          }}
-          className="font-lilac text-center fade-up"
+          className={`
+            text-center
+            transform transition-all duration-700 ease-out
+            ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}
+            delay-900
+          `}
         >
           <p className="text-black max-w-xl mx-auto mb-6">
             Whether meeting in person or through secure telehealth, the goal is
@@ -78,14 +86,17 @@ const OfficeSection = () => {
             openly, and feel fully respected throughout your therapy journey.
           </p>
 
-          <button className="bg-black text-white px-8 py-3 hover:bg-gray-400 transition">
+          <button
+            className="
+              bg-black text-white px-8 py-3
+              transition-all duration-300 ease-out
+              hover:bg-gray-400
+            "
+          >
             BOOK YOUR VISIT
           </button>
         </div>
-
       </div>
     </section>
   );
-};
-
-export default OfficeSection;
+}

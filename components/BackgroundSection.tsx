@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useReveal } from "@/hooks/useReveal";
 
 const data = [
   {
@@ -21,62 +22,81 @@ const data = [
 ];
 
 export default function BackgroundSection() {
+  const { ref, show } = useReveal();
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const toggle = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
-
   return (
-    <section className="bg-[#E7E4DB] py-20 px-6">
-
+    <section
+      ref={ref}
+      className="bg-[#E7E4DB] py-20 px-6 max-[800px]:py-16"
+    >
       <div className="max-w-3xl mx-auto">
-
-        {/* heading */}
-        <h2 className="text-4xl font-semibold text-black text-center mb-12 fade-up">
+        {/* Heading */}
+        <h2
+          className={`
+            text-4xl font-semibold text-black text-center mb-12
+            max-[800px]:text-[32px]
+            transform transition-all duration-700 ease-out
+            ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}
+            delay-100
+          `}
+        >
           My Professional Credentials
         </h2>
 
-        {/* accordion */}
-        {data.map((item, index) => (
-          <div
-            key={index}
-            className="border-t border-black fade-up"
-            style={{ animationDelay: `${0.2 + index * 0.2}s` }}
-          >
+        {/* Accordion */}
+        {data.map((item, index) => {
+          const isOpen = openIndex === index;
 
-            <button
-              onClick={() => toggle(index)}
-              className="w-full flex justify-between items-center py-6 text-left"
-            >
-              <h3 className="text-xl md:text-2xl text-black">
-                {item.title}
-              </h3>
-
-              <span className="text-2xl text-black">
-                {openIndex === index ? "−" : "+"}
-              </span>
-            </button>
-
+          return (
             <div
-              className={`overflow-hidden transition-all duration-300 ${
-                openIndex === index
-                  ? "max-w-xl ml-10 md:ml-24 text-xl pb-6 opacity-100"
-                  : "max-h-0 opacity-0"
-              }`}
+              key={index}
+              className={`
+                border-t border-black
+                transform transition-all duration-700 ease-out
+                ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}
+                ${index === 0 ? "delay-300" : index === 1 ? "delay-500" : "delay-700"}
+              `}
             >
-              <p className="text-black leading-relaxed">
-                {item.content}
-              </p>
+              <button
+                onClick={() =>
+                  setOpenIndex(isOpen ? null : index)
+                }
+                className="w-full flex justify-between items-center py-6 text-left cursor-pointer"
+              >
+                <h3 className="text-xl md:text-2xl text-black">
+                  {item.title}
+                </h3>
+
+                <span
+                  className={`
+                    text-2xl text-black
+                    transition-transform duration-200
+                    ${isOpen ? "rotate-180" : ""}
+                  `}
+                >
+                  {isOpen ? "−" : "+"}
+                </span>
+              </button>
+
+              {/* Content */}
+              <div
+                className={`
+                  overflow-hidden transition-all duration-500 ease-out
+                  ${isOpen ? "max-h-[260px] opacity-100" : "max-h-0 opacity-0"}
+                `}
+              >
+                <p className="text-black leading-relaxed text-[20px] ml-10 md:ml-20 pb-6">
+                  {item.content}
+                </p>
+              </div>
             </div>
+          );
+        })}
 
-          </div>
-        ))}
-
+        {/* bottom divider */}
         <div className="border-t border-black" />
-
       </div>
-
     </section>
   );
 }

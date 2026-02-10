@@ -1,10 +1,9 @@
 "use client";
-
 import { useEffect, useRef, useState } from "react";
 
-export function useReveal() {
-  const ref = useRef<HTMLElement | null>(null);
-  const [visible, setVisible] = useState(false);
+export function useReveal<T extends HTMLElement>() {
+  const ref = useRef<T | null>(null);
+  const [show, setShow] = useState(false);
 
   useEffect(() => {
     const el = ref.current;
@@ -14,13 +13,13 @@ export function useReveal() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setVisible(true);
-            observer.unobserve(entry.target);
+            setShow(true);
+            observer.unobserve(el);
           }
         });
       },
       {
-        threshold: 0.2,
+        threshold: 0.25,
       }
     );
 
@@ -29,5 +28,6 @@ export function useReveal() {
     return () => observer.disconnect();
   }, []);
 
-  return { ref, visible };
+  return { ref, show };
 }
+
