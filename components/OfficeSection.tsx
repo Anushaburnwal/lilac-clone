@@ -33,7 +33,7 @@ const OfficeSection = () => {
           ref={(el) => {
             refs.current[0] = el;
           }}
-          className="font-lilac text-center mb-10 fade-up"
+          className="text-center mb-10 fade-up"
         >
           <h2 className="text-3xl md:text-4xl font-semibold text-black">
             A Calm Space to Feel Supported

@@ -28,7 +28,7 @@ export default function BackgroundSection() {
   };
 
   return (
-    <section className="font-lilac bg-[#E7E4DB] py-20 px-6">
+    <section className="bg-[#E7E4DB] py-20 px-6">
 
       <div className="max-w-3xl mx-auto">
 

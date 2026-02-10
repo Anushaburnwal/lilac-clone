@@ -1,10 +1,3 @@
-@font-face {
-  font-family: "LilacFont";
-  src: url("/fonts/MyFont.otf") format("opentype");
-}
-
-
-
 .section {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
@@ -39,7 +32,6 @@
 
 .title {
   font-size: 52px;
-  font-family: "LilacFont", sans-serif;
   color: black;
   margin-bottom: 30px;
   font-weight: bold;
@@ -51,7 +43,6 @@
 
 .faqItem {
   border-bottom: 1px solid black;
-  font-family: "LilacFont", sans-serif;
   padding: 12px 0;
 }
 
@@ -79,7 +70,6 @@
 .questionRow h3 {
   font-size: 32px;
   font-weight: bold;
-  font-family: "LilacFont", sans-serif;
   color: black;
 }
 
@@ -88,14 +78,12 @@
 .answer {
   max-height: 0;
   overflow: hidden;
-  font-family: "LilacFont", sans-serif;
   transition: all 0.50s ease;
 }
 
 .answer p {
   margin-top: 10px;
   font-size: 16px;
-  font-family: "LilacFont", sans-serif;
   color: black;
 }
 

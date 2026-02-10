@@ -9,7 +9,7 @@ export default function LifeSection() {
     <section className="mt-10 bg-[#d9d5cc] flex">
 
       {/* LEFT TEXT */}
-      <div className="font-lilac flex flex-col w-1/2 bg-[#C8AAAA]">
+      <div className="flex flex-col w-1/2 bg-[#C8AAAA]">
 
         <div className="px-20 pt-30">
 

@@ -14,7 +14,7 @@ export default function Hero() {
   return (
     <section
       ref={ref}
-      className={`h-fit flex mx-7 pt-32 fade-up ${visible ? "show" : ""}`}
+      className={`font-dmSans h-fit flex mx-7 pt-32 fade-up ${visible ? "show" : ""}`}
     >
       {/* Image */}
       <div

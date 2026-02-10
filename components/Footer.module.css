@@ -1,17 +1,7 @@
-/* ---------- FONT ---------- */
-
-@font-face {
-  font-family: "LilacFont";
-  src: url("/fonts/MyFont.otf") format("opentype");
-}
-
-/* ---------- FOOTER BASE ---------- */
-
 .footer {
   width: 100%;
   background: #FFF7F3;
   color: #1f3b2c;
-  font-family: "LilacFont", sans-serif;
 }
 
 /* ---------- TOP GRID LAYOUT ---------- */

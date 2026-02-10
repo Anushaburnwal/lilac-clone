@@ -36,11 +36,11 @@ export default function Navbar() {
         ${showNav ? "translate-y-0" : "-translate-y-full"}
       `}
     >
-      <h1 className="font-lilac font-medium text-4xl text-black">
+      <h1 className="font-medium text-4xl text-black">
         Dr. Maya Reynolds, PsyD
       </h1>
 
-      <div className="font-lilac text-xl flex gap-8 text-black">
+      <div className="text-xl flex gap-8 text-black">
         <a href="#">Blog</a>
         <a href="#">Contact</a>
       </div>

@@ -1,14 +1,9 @@
-@font-face {
-  font-family: "LilacFont";
-  src: url("/fonts/MyFont.otf") format("opentype");
-}
 
 /* LEFT SIDE TEXT */
 
 .textWrapper p {
   font-size: 20px;
   color: #FFC4C4;
-  font-family: "LilacFont", sans-serif;
   margin-top: 10px;
   margin-bottom: 20px;
   margin-left: -36px;
@@ -21,7 +16,6 @@
   width: 100%; 
   background: transparent;
   border-top: 1px solid black;
-  font-family: "LilacFont", sans-serif;
   font-size: 16px;
   letter-spacing: 1px;
 

@@ -1,8 +1,3 @@
-@font-face {
-  font-family: "LilacFont";
-  src: url("/fonts/MyFont.otf") format("opentype");
-}
-
 .heroTextWrapper {
   display: flex;
   flex-direction: column;
@@ -37,14 +32,12 @@
   font-weight: 600;
   color: black;
   margin-bottom: 24px;
-  font-family: "LilacFont", sans-serif;
   line-height: 1.1;
 }
 
 .heroText {
   color: black;
   margin-bottom: 32px;
-  font-family: "LilacFont", sans-serif;
   margin-left: 32px;
   font-size: 20px;
 }

@@ -1,16 +1,10 @@
-@font-face {
-  font-family: "LilacFont";
-  src: url("/fonts/MyFont.otf") format("opentype");
-}
-
-
 .section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-
+  
   background: #F9DFDF;
-  padding: 120px 80px 120px 120px; /* ← added extra left padding */
+  padding: 120px 80px 120px 120px; 
   position: relative;
 }
 
@@ -19,12 +13,10 @@
 .text {
   max-width: 620px;
   margin-bottom:40px;
-  font-family: "LilacFont", sans-serif;
 }
 
 .text h2 {
   font-size: 54px;
-  font-family: "LilacFont", sans-serif;
   color: black;
   font-weight: bold;
   margin-bottom: 30px;
@@ -33,7 +25,6 @@
 .text p {
   font-size: 20px;
   line-height: 1.7;
-  font-family: "LilacFont", sans-serif;
   color: black;
   margin-bottom: 40px;
 }
@@ -43,7 +34,6 @@
 .cta {
   background: transparent;
   border: 1px solid black;
-  font-family: "LilacFont", sans-serif;
   padding: 14px 26px;
   font-size: 13px;                              
   letter-spacing: 1px;
