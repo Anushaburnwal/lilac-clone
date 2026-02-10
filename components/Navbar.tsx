@@ -31,7 +31,7 @@ export default function Navbar() {
       className={`
         fixed top-0 left-0 w-full h-20
         flex justify-between items-center px-12
-        bg-[#fff] z-50
+        bg-[#FCF5EE] z-50
         transition-transform duration-300
         ${showNav ? "translate-y-0" : "-translate-y-full"}
       `}

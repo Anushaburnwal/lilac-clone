@@ -9,25 +9,25 @@ export default function LifeSection() {
     <section className="mt-10 bg-[#d9d5cc] flex">
 
       {/* LEFT TEXT */}
-      <div className="font-lilac flex flex-col w-1/2">
+      <div className="font-lilac flex flex-col w-1/2 bg-[#C8AAAA]">
 
         <div className="px-20 pt-30">
 
           <h2
-            className={`text-5xl font-semibold text-[#1f3b2c] mb-9 
+            className={`text-5xl font-semibold text-black mb-9 
             ${styles.fadeUp} ${styles.delay1}`}
           >
             When Life Looks Fine — But Doesn’t Feel That Way Inside
           </h2>
 
           <p
-            className={`text-[#1f3b2c] text-xl mb-4 
+            className={`text-black text-xl mb-4 
             ${styles.fadeUp} ${styles.delay2}`}
           >
             Many of the adults I work with appear capable, driven, and successful on the outside — yet internally feel overwhelmed, tense, or emotionally drained. 
            </p>
           <p
-            className={`text-[#1f3b2c] text-xl 
+            className={`text-black text-xl 
             ${styles.fadeUp} ${styles.delay3}`}
           >
            You may be managing responsibilities, meeting expectations, and showing up for others, while quietly carrying a constant sense of pressure or worry.

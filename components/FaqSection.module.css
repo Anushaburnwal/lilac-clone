@@ -8,7 +8,7 @@
 .section {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
-  background: #f6f4f0;
+  background: #FFF2EB;
   padding: 120px 80px;
   gap: 60px;
 }
@@ -40,17 +40,17 @@
 .title {
   font-size: 52px;
   font-family: "LilacFont", sans-serif;
-  color: #1f3b2c;
+  color: black;
   margin-bottom: 30px;
   font-weight: bold;
-  border-bottom: 1px solid #1f3b2c;
+  border-bottom: 1px solid black;
   padding-bottom: 10px;
 }
 
 /* FAQ ITEM */
 
 .faqItem {
-  border-bottom: 1px solid #1f3b2c;
+  border-bottom: 1px solid black;
   font-family: "LilacFont", sans-serif;
   padding: 12px 0;
 }
@@ -80,7 +80,7 @@
   font-size: 32px;
   font-weight: bold;
   font-family: "LilacFont", sans-serif;
-  color: #1f3b2c;
+  color: black;
 }
 
 /* ANSWER */
@@ -96,7 +96,7 @@
   margin-top: 10px;
   font-size: 16px;
   font-family: "LilacFont", sans-serif;
-  color: #1f3b2c;
+  color: black;
 }
 
 .open {

@@ -7,7 +7,7 @@
 
 .textWrapper p {
   font-size: 20px;
-  color: #1f3b2c;
+  color: #FFC4C4;
   font-family: "LilacFont", sans-serif;
   margin-top: 10px;
   margin-bottom: 20px;
@@ -20,12 +20,12 @@
 .button {
   width: 100%; 
   background: transparent;
-  border-top: 1px solid #1f3b2c;
+  border-top: 1px solid black;
   font-family: "LilacFont", sans-serif;
   font-size: 16px;
   letter-spacing: 1px;
 
-  color: #1f3b2c;
+  color: black;
 
   padding: 16px 0;
   cursor: pointer;
@@ -34,9 +34,9 @@
 }
 
 .button:hover {
-  background: #173525;
+  background: black;
   color: white;
-  border-top-color: #1f3b2c;
+  border-top-color: black;
   padding-left: 12px;
 }
 

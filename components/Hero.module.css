@@ -35,14 +35,14 @@
 .heroTitle {
   font-size: 60px;
   font-weight: 600;
-  color: #14532d;
+  color: black;
   margin-bottom: 24px;
   font-family: "LilacFont", sans-serif;
   line-height: 1.1;
 }
 
 .heroText {
-  color: #166534;
+  color: black;
   margin-bottom: 32px;
   font-family: "LilacFont", sans-serif;
   margin-left: 32px;
@@ -50,11 +50,11 @@
 }
 
 .heroButton {
-  border: 1px solid #14532d;
+  border: 1px solid black;
   font-size: 15px;
   padding: 12px 24px;
   background: transparent;
-  color: #000;
+  color: black;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -67,7 +67,7 @@
 }
 
 .heroButton:hover {
-  background: #14532d;
+  background: black;
   color: #fff;
 }
 

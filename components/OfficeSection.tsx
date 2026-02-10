@@ -25,19 +25,21 @@ const OfficeSection = () => {
   }, []);
 
   return (
-    <section className="w-full bg-neutral-50 py-16 px-6 md:px-16">
+    <section className="w-full bg-[#DCC5B2] py-16 px-6 md:px-16">
       <div className="max-w-6xl mx-auto">
 
         {/* Heading */}
         <div
-          ref={(el) => (refs.current[0] = el)}
+          ref={(el) => {
+            refs.current[0] = el;
+          }}
           className="font-lilac text-center mb-10 fade-up"
         >
-          <h2 className="text-3xl md:text-4xl font-semibold text-gray-800">
+          <h2 className="text-3xl md:text-4xl font-semibold text-black">
             A Calm Space to Feel Supported
           </h2>
 
-          <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+          <p className="mt-4 text-black max-w-2xl mx-auto">
             Therapy sessions are offered in a quiet, private Santa Monica office
             designed to help you feel grounded and at ease. Natural light,
             comfortable seating, and a peaceful environment create space for
@@ -51,10 +53,12 @@ const OfficeSection = () => {
             (src, i) => (
               <img
                 key={i}
-                ref={(el) => (refs.current[i + 1] = el)}
+                ref={(el) => {
+                  refs.current[i + 1] = el;
+                }}
                 src={src}
                 alt="Therapy office"
-                className="rounded-xl shadow-md object-cover w-full h-64 fade-up"
+                className="rounded-0 shadow-md object-cover w-full h-64 fade-up"
                 style={{ transitionDelay: `${i * 0.15}s` }}
               />
             )
@@ -63,16 +67,18 @@ const OfficeSection = () => {
 
         {/* Footer */}
         <div
-          ref={(el) => (refs.current[4] = el)}
+          ref={(el) => {
+            refs.current[4] = el;
+          }}
           className="font-lilac text-center fade-up"
         >
-          <p className="text-gray-600 max-w-xl mx-auto mb-6">
+          <p className="text-black max-w-xl mx-auto mb-6">
             Whether meeting in person or through secure telehealth, the goal is
             to provide a supportive setting where you can slow down, speak
             openly, and feel fully respected throughout your therapy journey.
           </p>
 
-          <button className="bg-gray-800 text-white px-8 py-3 rounded-full hover:bg-gray-700 transition">
+          <button className="bg-black text-white px-8 py-3 hover:bg-gray-400 transition">
             BOOK YOUR VISIT
           </button>
         </div>

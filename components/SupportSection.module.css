@@ -25,7 +25,7 @@
 /* RIGHT CONTENT */
 
 .content {
-  background: #d7d6df; /* soft lavender */
+  background: #FFE4EF; /* soft lavender */
 
   display: flex;
   flex-direction: column;
@@ -36,7 +36,7 @@
 .content h2 {
   font-size: 52px;
   font-weight: bold;
-  color: #1f3b2c;
+  color: black;
   font-family: "LilacFont", sans-serif;
   margin-bottom: 40px;
   margin-top: 180px;
@@ -46,7 +46,7 @@
   margin-bottom: 40px;
   font-size: 20px;
   font-family: "LilacFont", sans-serif;
-  color: #1f3b2c;
+  color: black;
 }
 
 .content ul {
@@ -59,13 +59,13 @@
   font-family: "LilacFont", sans-serif;
   font-size: 18px;
   margin-left: 20px;
-  color: #1f3b2c;
+  color: black;
 }
 
 .footerText {
   margin-top: 40px;
   font-size: 20px;
-  color: #1f3b2c;
+  color: black;
   font-family: "LilacFont", sans-serif;
   margin-bottom: auto;
 }
@@ -80,7 +80,7 @@
   border-top: 1px solid #1f3b2c;
 
   background: transparent;
-  color: #1f3b2c;
+  color: black;
 
   font-size: 16px;
   letter-spacing: 1px;  
@@ -94,7 +94,7 @@
 /* hover fill */
 
 .cta:hover {
-  background: #1f3b2c;
+  background: black;
   color: white;
   padding-left: 12px;
 }

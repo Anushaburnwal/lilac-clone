@@ -5,7 +5,7 @@
 
 
 .section {
-  background: #feffec;
+  background: #FFFDF1;
   padding: 100px 60px;
   
 }
@@ -15,7 +15,7 @@
   font-size: 52px;
   margin-top: 20px;
   font-weight: 600;
-  color: #1f3b2c;
+  color: black;
   font-family: "LilacFont", sans-serif;
   margin-bottom: 50px;
 }
@@ -32,7 +32,7 @@
   border: 1px solid #1f3b2c;
   font-family: "LilacFont", sans-serif;
   padding: 40px;
-  background: #d9d5cc;
+  background: #ACBAC4;
   display: flex;
   height: 110%;
   flex-direction: column;
@@ -46,7 +46,7 @@
   margin-top: -20px;
   margin-left: -20px;
   font-family: "LilacFont", sans-serif;
-  color: #1f3b2c;
+  color: black;
 }
 
 .card p {
@@ -54,7 +54,7 @@
   line-height: 1.6;
   margin-top: -10px;
   margin-left: -20px;
-  color: #1f3b2c;
+  color: black;
   font-family: "LilacFont", sans-serif;
   margin-bottom: 30px;
 }

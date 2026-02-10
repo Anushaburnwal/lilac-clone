@@ -9,7 +9,7 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
 
-  background: #d9d5cc;
+  background: #F9DFDF;
   padding: 120px 80px 120px 120px; /* ← added extra left padding */
   position: relative;
 }
@@ -25,7 +25,7 @@
 .text h2 {
   font-size: 54px;
   font-family: "LilacFont", sans-serif;
-  color: #1f3b2c;
+  color: black;
   font-weight: bold;
   margin-bottom: 30px;
 }
@@ -34,7 +34,7 @@
   font-size: 20px;
   line-height: 1.7;
   font-family: "LilacFont", sans-serif;
-  color: #1f3b2c;
+  color: black;
   margin-bottom: 40px;
 }
 
@@ -42,18 +42,18 @@
 
 .cta {
   background: transparent;
-  border: 1px solid #1f3b2c;
+  border: 1px solid black;
   font-family: "LilacFont", sans-serif;
   padding: 14px 26px;
   font-size: 13px;                              
   letter-spacing: 1px;
-  color: #1f3b2c;
+  color: black;
   cursor: pointer;
   transition: all 0.60s ease;
 }
 
 .cta:hover {
-  background: #1f3b2c;
+  background: black;
   color: white;
 }
 
