@@ -17,23 +17,20 @@ export default function LifeSection() {
             className={`text-5xl font-semibold text-[#1f3b2c] mb-9 
             ${styles.fadeUp} ${styles.delay1}`}
           >
-            Live a fulfilling life.
+            When Life Looks Fine — But Doesn’t Feel That Way Inside
           </h2>
 
           <p
             className={`text-[#1f3b2c] text-xl mb-4 
             ${styles.fadeUp} ${styles.delay2}`}
           >
-            Life can be challenging—especially when you're trying to balance
-            your personal and professional life.
-          </p>
-
+            Many of the adults I work with appear capable, driven, and successful on the outside — yet internally feel overwhelmed, tense, or emotionally drained. 
+           </p>
           <p
             className={`text-[#1f3b2c] text-xl 
             ${styles.fadeUp} ${styles.delay3}`}
           >
-            It's easy to feel like you're alone in facing these challenges,
-            but I want you to know that I'm here to help.
+           You may be managing responsibilities, meeting expectations, and showing up for others, while quietly carrying a constant sense of pressure or worry.
           </p>
 
         </div>
@@ -43,7 +40,7 @@ export default function LifeSection() {
             className={`${styles.button} 
             ${styles.fadeUp} ${styles.delay4}`}
           >
-            GET IN TOUCH →
+            TAKE THE FIRST STEP →
           </button>
         </div>
 

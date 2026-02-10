@@ -9,17 +9,18 @@ export default function CTASection() {
       <div className={styles.container}>
 
         <h2 className={`${styles.title} ${styles.fadeUp} ${styles.delay1}`}>
-          Get started today.
+          Begin Your Healing Journey
         </h2>
 
         <p className={`${styles.text} ${styles.fadeUp} ${styles.delay2}`}>
-          Ready to take the first step towards a happier, healthier you?
-          Contact me to book your first session. I look forward to
-          starting this therapeutic journey with you.
+          Therapy can be a space to slow down, reconnect with yourself, and 
+          move forward with greater clarity and balance. Whether you’re feeling 
+          overwhelmed, burned out, or ready for change, support is available in 
+          a way that feels safe and grounded.
         </p>
 
         <button className={`${styles.button} ${styles.fadeUp} ${styles.delay3}`}>
-          GET IN TOUCH →
+          BOOK A CONSULTATION →
         </button>
 
       </div>

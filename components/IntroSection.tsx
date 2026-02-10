@@ -11,19 +11,15 @@ export default function IntroSection() {
       <div className={styles.text}>
 
         <h2 className={`${styles.fadeUp} ${styles.delay1}`}>
-          Hi, I’m Lilac.
+          Hi, I’m Maya Reynold's.
         </h2>
 
         <p className={`${styles.fadeUp} ${styles.delay2}`}>
-          I'm committed to providing a safe and supportive environment where
-          we can explore your thoughts, feelings, and behaviors. With empathy
-          and guidance, we'll work together to navigate the challenges life
-          throws your way.
-        </p>
-
+          I’m a licensed clinical psychologist based in Santa Monica, helping adults navigate anxiety, trauma, and burnout in a supportive and grounded environment. Many of the people I work with appear capable on the outside while quietly feeling overwhelmed, tense, or emotionally exhausted.
+          </p>
         <div className={`w-full flex justify-center ${styles.fadeUp} ${styles.delay3}`}>
           <button className={styles.cta}>
-            LET’S CHAT →
+            TALK WITH DR. MAYA →
           </button>
         </div>
 

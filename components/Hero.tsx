@@ -31,21 +31,21 @@ export default function Hero() {
             className={`${styles.heroTitle} ${dmSans.className} 
             ${styles.fadeUp} ${styles.delay2}`}
           >
-            Live your life in full bloom
+            Anxiety & Trauma Therapy for Adults in Santa Monica
           </h1>
 
           <p
             className={`${styles.heroText} 
             ${styles.fadeUp} ${styles.delay3}`}
           >
-            Therapy for Adults in Minneapolis, MN.
+            Supporting high-achieving adults who feel overwhelmed, stuck in overthinking, or emotionally exhausted.
           </p>
 
           <button
             className={`${styles.heroButton} 
             ${styles.fadeUp} ${styles.delay4}`}
           >
-            CONNECT WITH ME →
+            SCHEDULE A CONSULTATION →
           </button>
         </div>
       </div>

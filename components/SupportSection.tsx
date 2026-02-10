@@ -17,30 +17,29 @@ export default function SupportSection() {
         <div className="px-14">
 
           <h2 className={`${styles.fadeUp} ${styles.delay2}`}>
-            You don't have to do this all alone.
+            You Deserve Support Through This
           </h2>
 
           <p className={`${styles.subtitle} ${styles.fadeUp} ${styles.delay3}`}>
-            If you are facing any of these, there's hope:
+            You may benefit from therapy if you’re experiencing:
           </p>
 
           <ul className={`list-disc pl-6 space-y-2 ${styles.fadeUp} ${styles.delay4}`}>
-            <li>Persistent feelings of sadness or hopelessness</li>
-            <li>Trouble focusing or making decisions</li>
-            <li>Difficulty maintaining relationships</li>
-            <li>Feeling constantly exhausted or unmotivated</li>
-            <li>A pervasive sense of being overwhelmed</li>
+            <li>Constant worry or overthinking that feels hard to quiet</li>
+            <li>Physical tension, restlessness, or difficulty relaxing</li>
+            <li>Emotional exhaustion or professional burnout</li>
+            <li>Lingering stress from past experiences</li>
+            <li>Feeling functional on the outside but overwhelmed inside</li>
           </ul>
 
           <p className={`${styles.footerText} ${styles.fadeUp} ${styles.delay5}`}>
-            With empathy and guidance, we’ll work together to navigate the
-            challenges life throws your way.
+            With empathy, structure, and thoughtful guidance, we work together to create safety, clarity, and lasting emotional balance — at a pace that feels supportive and sustainable.
           </p>
 
         </div>
 
         <button className={`${styles.cta} ${styles.fadeUp} ${styles.delay6}`}>
-          WORK WITH ME →
+          GET SUPPORT →
         </button>
 
       </div>

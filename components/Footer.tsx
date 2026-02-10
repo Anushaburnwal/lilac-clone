@@ -13,11 +13,12 @@ export default function Footer() {
 
         {/* LEFT */}
         <div className={`${styles.col} ${styles.fadeUp} ${styles.delay1}`}>
-          <h2 className={styles.brand}>Lilac Template</h2>
+          <h2 className={styles.brand}>Dr. Maya Reynolds, PsyD</h2>
 
           <p>
-            123 Example Road<br />
-            Minneapolis, MN
+            Licensed Clinical Psychologist<br />
+            123th Street 45 W, Santa Monica, CA 90401<br/>
+            In-person & Telehealth Therapy
           </p>
 
           <p className={styles.links}>
@@ -64,7 +65,7 @@ export default function Footer() {
         </p>
 
         <p className={styles.copy}>
-          All Rights Reserved © 2024 Your Business Name Here, LLC.
+          © 2026 Dr. Maya Reynolds, PsyD — All rights reserved.
         </p>
 
       </div>

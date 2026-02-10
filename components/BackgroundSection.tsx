@@ -6,17 +6,17 @@ const data = [
   {
     title: "Education",
     content:
-      "Euphorbia dianthus alchemilla muscari lavandula anthurium artemesia false artemesia moluccella gladiolus cirsium trollius anthurium prunus delphinium achillea.",
+      "I earned my Doctorate in Clinical Psychology (PsyD) with advanced training in anxiety, trauma-informed care, and evidence-based therapeutic approaches. My education emphasized understanding both the emotional and physiological impact of stress, allowing me to support clients with practical tools and depth-oriented insight.",
   },
   {
     title: "Licensure",
     content:
-      "Euphorbia dianthus alchemilla muscari lavandula anthurium artemesia false artemesia moluccella gladiolus cirsium trollius anthurium prunus delphinium achillea.",
+      "I am a licensed clinical psychologist practicing in California, providing therapy for adults navigating anxiety, trauma, and burnout. My work follows ethical, evidence-based standards while prioritizing safety, collaboration, and individualized care.",
   },
   {
     title: "Certifications",
     content:
-      "Euphorbia dianthus alchemilla muscari lavandula anthurium artemesia false artemesia moluccella gladiolus cirsium trollius anthurium prunus delphinium achillea.",
+      "I integrate specialized training in cognitive-behavioral therapy (CBT), EMDR, mindfulness-based techniques, and body-oriented approaches. These certifications allow me to address trauma, stress, and emotional regulation in a structured yet compassionate way.",
   },
 ];
 
@@ -34,7 +34,7 @@ export default function BackgroundSection() {
 
         {/* heading */}
         <h2 className="text-4xl font-semibold text-black text-center mb-12 fade-up">
-          My Professional Background
+          My Professional Credentials
         </h2>
 
         {/* accordion */}

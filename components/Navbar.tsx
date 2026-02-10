@@ -37,7 +37,7 @@ export default function Navbar() {
       `}
     >
       <h1 className="font-lilac font-medium text-4xl text-black">
-        Lilac Template
+        Dr. Maya Reynolds, PsyD
       </h1>
 
       <div className="font-lilac text-xl flex gap-8 text-black">

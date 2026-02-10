@@ -4,9 +4,9 @@ import { useState } from "react";
 import styles from "./FaqSection.module.css";
 
 const faqs = [
-  { question: "Do you take insurance?", answer: "Answer goes here." },
-  { question: "What are your rates?", answer: "Answer goes here." },
-  { question: "Do you have any openings?", answer: "Answer goes here." },
+  { question: "What is Dr. Maya’s therapy approach like?", answer: "Dr. Maya takes a warm, collaborative, and evidence-based approach to therapy. She integrates methods such as cognitive-behavioral therapy, EMDR, mindfulness, and body-oriented techniques to address both emotional and physical stress. Sessions are paced thoughtfully to create safety, insight, and lasting change." },
+  { question: "Are sessions available in person or online?", answer: "Therapy sessions are offered in person at Dr. Maya’s Santa Monica office as well as through secure telehealth for clients located in California. Both options provide a private, supportive environment tailored to your comfort and needs." },
+  { question: "What are the fees for therapy sessions?", answer: "Session fees vary depending on the type and length of service. During an initial consultation, we discuss your needs, availability, and any practical details so you feel clear and comfortable before beginning therapy. My goal is to provide transparent information and a supportive process from the start." },
 ];
 
 export default function FaqSection() {
